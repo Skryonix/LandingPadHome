@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<button id="darkModeToggle">Toggle Dark Mode</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="advanced.css">
+</head>
+
+<body>
+  <!-- Header and Introduction Section -->
+  <header class="header">
+    <div class="header-content">
+      <h1>Welcome to My Website</h1>
+      <p>Explore and learn about me and my goals.</p>
+    </div>
+    <img src="https://media.tenor.com/QfCybYD5YeMAAAAd/ffxiv-hildibrand.gif" alt="Hildibrand Thonk">
+  </header>
+
+  <!-- About Me Section -->
+  <section class="about-me fade-in">
+    <div class="background-gif">
+      <h2>About the Website</h2>
+      <p>Welcome to my personal website! I'm Preston Conser, a gamer, tech enthusiast, and father. I hope to learn as I create more while learning!</p>
+      <p>As an aspiring web developer, I know firsthand the challenges of getting into technology development and advancement. I've created this website to test my knowledge and ability to create webpages.</p>
+      <p>If you want to connect with me on a more professional level, feel free to check out my <a href="https://www.linkedin.com/in/preston-conser-a3117387/" target="_blank">LinkedIn profile</a> for additional information about my background and experiences.</p>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog fade-in">
+    <div class="background-gif">
+      <h2>Blog</h2>
+      <p>Discover the latest articles and insights related to web development, programming, and technology. Our blog covers a wide range of topics, including frontend and backend development, best practices, tips and tricks, and industry trends.</p>
+      <a href="https://web.dev/blog/" target="_blank">Web Blog for Devs</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact fade-in">
+    <div class="contact-content">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <h1>Contact Us</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message" id="nameError"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="emailError"></span>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <small class="error-message"></small>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <span class="error-message" id="messageError"></span>
+
+        <input type="submit" value="Submit" id="submitBtn" disabled>
+        <p id="successMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!--Image-Carousel-Section-->
+  <section class="carousel-section">
+    <h2>Favorite Games</h2>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <div class="carousel-game">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVBikdeQ-7IAXp-ShCRRspP7vQlL9H0m8bxT0S9LtaL50KiNA" alt="Payday 3" title="Payday 3">
+        </div>
+        <div class="carousel-game">
+          <img src="https://cdn1.epicgames.com/spt-assets/14eb3477a6084940b49de5aa73c60f98/payday-2-1smw7.jpg" alt="Payday 2: Legacy" title="Payday 2: Legacy Collection">
+        </div>
+        <div class="carousel-game">
+          <img src="https://howlongtobeat.com/games/57445_Starfield.jpg" alt="Starfield" title="Starfield">
+        </div>
+        <div class="carousel-game">
+          <img src="https://howlongtobeat.com/games/TheElderScrollsVSkyrimLegendaryEdition.jpg" alt="Skyrim" title=" The Elder Scrolls V: Skryim">
+        </div>
+        <div class="carousel-game">
+          <img src="https://howlongtobeat.com/games/TheElderScrollsIVOblivion-GameoftheYearEdition.jpg" alt="Oblivion" title="The Elder Scrolls IV: Oblivion">
+        </div>
+        <div class="carousel-game">
+          <img src="https://images-bucket.bonanzastatic.com/afu/images/d3de/05ed/06ed_11196597556/W_1611_.jpg" alt="Elden Ring" title="Elden Ring">
+        </div>
+        <div class="carousel-game">
+          <img src="https://images.saymedia-content.com/.image/t_share/MTczOTQ4NDc2NTE2OTM0OTYz/red-dead-redemption-2-a-year-later.png" alt="Red Dead Redemption 2" title="Red Dead Redemption 2">
+        </div>
+        <div class="carousel-game">
+          <img src="https://collider.com/wp-content/uploads/grand-theft-auto-5-box-art.jpg" alt="GTA V" title="Grand Theft Auto V">
+        </div>
+        <!-- Add more images here -->
+      </div>
+      <button class="carousel-btn prev-btn">&#10094;</button>
+      <button class="carousel-btn next-btn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Button -->
+  <section class="cta">
+    <h2>Stay Updated</h2>
+    <p>Sign up for our newsletter to receive the latest updates and exclusive content directly in your inbox.</p>
+    <button type="button">Sign Up Now</button>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
